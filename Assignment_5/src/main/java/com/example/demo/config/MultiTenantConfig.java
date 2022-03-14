@@ -61,7 +61,7 @@ public class MultiTenantConfig {
     }
     
     @PostConstruct
-    public DataSource userDataSource() {
+    public DataSource bookDataSource() {
         String tenantName = "";
         if(tenantName.isEmpty() || tenantName.isBlank())
             tenantName = "persistence-book1";
